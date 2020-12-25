@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>タイピングアプリ</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="index.html" />
+  </head>
+
+  <body>
+    <div class="main" id="container">
+      <span class="typing-mozi" id="disp-word"></span>
+      <span class="typing-mozi-romaji" id="disp-word romaji"></span>
+      <span class="player-typing" id="disp-word player"></span>
+    </div>
+    <script src="typing.js"></script>
+
+    <div class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+            <p class="Result-p">タイピング結果</p>
+            <table border="1" class="typingResult" id="resultTable">
+                <tr>
+                    <th>スコア</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>ミス数</td>
+                    <td id="missCount">0</td>
+                </tr>
+                <tr>
+                    <td>WPM</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+            <div class="wrapper">
+                <a href="index.html" class="fancy-button bg-gradient1 goBackTitle"><span><i class="fa fa-wheelchair-alt"></i>Go Back Title</span></a><a href="typing2.html" class="fancy-button bg-gradient1 oneMorePlay"><span><i class="fa fa-wheelchair-alt"></i>One More Play</span></a>
+                </div>
+        </div>
+  </body>
+</html>
+  <body>
+    <div class="main" id="container">
+      <span id="disp-word"></span>
+    </div>
+    <script src="typing.js"></script>
+  </body>
+</html>
