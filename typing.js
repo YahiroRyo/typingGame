@@ -22,6 +22,7 @@
 //  }, 1000);
 
 // グローバルに変数を色々定義する
+const startDate = Date.now()
 var counts = 0;
 var miss = -1;
 const textList = [
@@ -79,10 +80,15 @@ window.onkeydown = function (event) {
     counts++;
     console.log("カウント" + counts);
     if (counts == 2) {
-      scoreResultElement.innerHTML = ` ${score}点`;
+      scoreResultElement.innerHTML = `${score}点`;
       tar.innerHTML = "";
       nar.innerHTML = "";
       window.onkeydown = "";
+      // wpm処理
+      const endDate = Date.now()
+      const diffSecods = (endDate - startDate) /  (1000);
+      console.log(diffSecods)
+      document.getElementById("wpm-result").innerText = Math.floor(score / diffSecods * 100) / 100;
       console.log("FINISH");
       $(".js-modal").fadeIn();
     }
