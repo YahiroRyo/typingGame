@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>タイピングゲーム</title>
-        <script src="jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <script src="typing.js"></script>
-        <link href="index.html">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピングゲーム</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="typing.js"></script>
+    <link href="index.html">
+</head>
 
-    <body>
-        <input type="text" value="" id="textbox" onchange="textboxView(this.value)"></input>
-        <span id="disp-word"></span>
-        <div class="modal js-modal">
-            <div class="modal__bg js-modal-close"></div>
-            <div class="modal__content">
-                <p class="Result-p">タイピング結果</p>
-                <table border="1" class="typingResult" id="resultTable">
-                    <tr>
-                        <th>スコア</th>
-                        <th>0</th>
-                    </tr>
-                    <tr>
-                        <td>ミス数</td>
-                        <td>?</td>
-                    </tr>
-                    <tr>
-                        <td>WPM</td>
-                        <td>?</td>
-                    </tr>
-                </table>
-            </div>
-                <div class="wrapper">
-                    <a href="index.html" class="fancy-button bg-gradient1 goBackTitle"><span><i class="fa fa-wheelchair-alt"></i>Go Back Title</span></a><a href="typing2.html" class="fancy-button bg-gradient1 oneMorePlay"><span><i class="fa fa-wheelchair-alt"></i>One More Play</span></a>
-                    </div>
-            </div>
+<body>
+    <input type="text" value="" id="textbox" onchange="textboxView(this.value)"></input>
+    <span id="disp-word"></span>
+    <div class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+            <p class="Result-p">タイピング結果</p>
+            <table border="1" class="typingResult" id="resultTable">
+                <tr>
+                    <th>スコア</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <td>ミス数</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>WPM</td>
+                    <td>?</td>
+                </tr>
+            </table>
         </div>
-            </div>
+        <div class="wrapper">
+            <a href="index.html" class="fancy-button bg-gradient1 goBackTitle"><span>Go Back Title</span></a><a href="typing2.html"
+                class="fancy-button bg-gradient1 oneMorePlay"><span>One More
+                    Play</span></a>
         </div>
-    </body>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
 </html>
