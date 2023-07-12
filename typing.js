@@ -78,8 +78,8 @@ window.onkeydown = function (event) {
     player_typing.innerHTML = "";
     counts++;
     console.log("カウント" + counts);
-    if (counts == 15) {
-      scoreResultElement.innerHTML = `${score}点`;
+    if (counts == 2) {
+      scoreResultElement.innerHTML = ` ${score}点`;
       tar.innerHTML = "";
       nar.innerHTML = "";
       window.onkeydown = "";
